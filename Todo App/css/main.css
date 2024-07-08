@@ -1,0 +1,56 @@
+body {
+  background-color: #013950;
+}
+.task-form {
+  background-color: #012839;
+}
+.task {
+  background-color: #009788;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.task:hover {
+  width: 80% !important;
+}
+.task .icons svg {
+  padding: 10px !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-size: 20px;
+}
+.task .icons svg:hover {
+  color: #012839;
+}
+
+.loading {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: transparent #fff transparent transparent;
+  animation: spinner 1s linear infinite;
+  -webkit-animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+  50% {
+    border-right-color: transparent;
+  }
+  75% {
+    border-right-color: #fff;
+  }
+  100% {
+    border-right-color: #fff;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
